@@ -712,5 +712,299 @@ const NTC_DOCUMENTS = [
       { heading: "Sections F-G - Sanctions, Effectivity", body: "Violations handled per existing Radio Laws. Effective 15 days after publication. Adopted June 25, 1998, by Acting Commissioner Fidelo Q. Dumlao.", refs: ["eo-546", "ra-7925", "mc-02-01-97"] },
       { heading: "Attachment A - Technical Standards", body: "Max 3W output, 12.5kHz channel spacing, 40 channels on 325.0000-325.4875 MHz. Requires CTCSS squelch (10+ tones), unique antenna fittings, and full test procedures (carrier power, modulation, spurious emissions, ±3ppm frequency error) under standard and extreme conditions." }
     ]
+  },
+  {
+    id: "eo-59",
+    title: "EO 59, s.1993 — Compulsory Interconnection of Public Telecommunications Carriers",
+    shortTitle: "EO 59",
+    type: "law",
+    category: "Executive Orders",
+    status: "active",
+    effective_date: "1993-02-24",
+    tags: ["interconnection", "telecom-services", "competition", "foundational-law"],
+    cross_references: ["mc-10-07-2007"],
+    sections: [
+      { heading: "Compulsory Interconnection", body: "NTC directed to expedite interconnection of all authorized public telecommunications carriers into a single, universally accessible, fully integrated nationwide network. Interconnection made compulsory." },
+      { heading: "Points and Manner of Interconnection", body: "Interconnection at local exchanges and trunk/junction exchanges with sufficient capacity. Subscribers get freedom to route calls via carrier access codes. Extends to value-added services: paging, trunking radio, data switching." },
+      { heading: "Negotiation and NTC Intervention", body: "Terms negotiated bilaterally between carriers; NTC intervenes if no agreement within 90 days. Settlements computed per-minute, volume-based, with day/night differentials." },
+      { heading: "Implementing Rules and Sanctions", body: "NTC to issue implementing rules within 90 days. Non-compliance subject to administrative fines, suspension of pending applications, disqualification of responsible officers, and/or suspension of authority to collect rates.", refs: ["mc-10-07-2007"] }
+    ]
+  },
+  {
+    id: "pd-576-a",
+    title: "PD 576-A — Regulating Ownership and Operation of Radio and Television Stations",
+    shortTitle: "PD 576-A",
+    type: "law",
+    category: "Foundational Laws",
+    status: "amended",
+    effective_date: "1974-11-11",
+    tags: ["broadcasting", "franchise", "foundational-law", "historical"],
+    cross_references: ["act-3846", "eo-546"],
+    sections: [
+      { heading: "Sections 1-2 - Capital and Public Service Programming", body: "Every station must have capital sufficient for one year of operations and devote at least two hours a day during prime time to public service programming." },
+      { heading: "Sections 3-4 - Ownership Limits and Divestiture", body: "No person/entity may own more than one station per municipality/city, or more than five AM, five FM, and five TV stations nationwide. Excess holdings must be divested." },
+      { heading: "Sections 5-6 - Non-Compliance and Franchise Termination", body: "Non-compliance results in franchise cancellation. All existing franchises were declared terminated as of December 31, 1981, requiring Board of Communications reauthorization.", refs: ["eo-546"] },
+      { heading: "Sections 7-8 - Penalties and Effectivity", body: "Violations punishable by 5 months to 6 years imprisonment and/or P1,000-P10,000 fine. Effective immediately, November 11, 1974." },
+      { heading: "Later Legal Interpretation", body: "A 1991 DOJ opinion traces NTC's present authority to authorize broadcast operation without a legislative franchise through this Decree and EO 546.", refs: ["act-3846", "eo-546"] }
+    ]
+  },
+  {
+    id: "ca-146",
+    title: "Commonwealth Act 146 — The Public Service Act",
+    shortTitle: "CA 146",
+    type: "law",
+    category: "Foundational Laws",
+    status: "amended",
+    effective_date: "1936-11-07",
+    tags: ["public-service-act", "franchise", "foundational-law"],
+    cross_references: ["eo-546", "mc-10-07-2007"],
+    sections: [
+      { heading: "Definitions", body: "\"Public service\" covers entities operating for compensation any common carrier, railroad, subway, motor vehicle, plus telecommunications and water systems." },
+      { heading: "Chapter I - The Public Service Commission", body: "Creates the Public Service Commission under the Department of Justice: one Commissioner and five Associate Commissioners, Bar members appointed by the President." },
+      { heading: "Chapter II - Powers and Duties", body: "Commission may issue certificates of public convenience and necessity; fix rates and service standards; approve capital stock and franchise transfers; require uniform accounting." },
+      { heading: "Chapter III - Prohibitions", body: "Public services may not operate without a certificate, provide unsafe/inadequate service, or grant undue preferences." },
+      { heading: "Chapters IV, VI - Penalties and Fees", body: "Fines up to P200/day (up to P25,000 for corporations) and imprisonment up to 5 years. Registration fee P50; supervision fee 20 centavos per P100 of capital stock." },
+      { heading: "Relation to NTC", body: "Regulatory functions over telecommunications carriers transferred to NTC upon its creation by EO 546. Section 19(b) is cited as legal basis for NTC's interconnection rules, including MC 10-07-2007.", refs: ["eo-546", "mc-10-07-2007"] }
+    ]
+  },
+  {
+    id: "do-5",
+    title: "DO 5, s.1948 — Rules and Regulations Governing Commercial Radio Operators",
+    shortTitle: "DO 5",
+    type: "regulation",
+    category: "Department Orders",
+    status: "amended",
+    effective_date: "1948-09-22",
+    tags: ["radio-operators", "licensing", "historical"],
+    cross_references: ["act-3846"],
+    sections: [
+      { heading: "Licensing Requirement and Classes", body: "Only a licensed radio operator may operate a station requiring a license. Three categories: radiotelephone, radiotelegraph, radioteletype, each with three classes.", refs: ["act-3846"] },
+      { heading: "Applicant Qualifications and Examination", body: "Applicants must be Philippine citizens, 18+, high school graduates, radio-school graduates or experienced government operators. Written exams cover basic law and technical content." },
+      { heading: "Renewal, Fees, and Penalties", body: "90 days satisfactory service allows renewal without retesting. Fees P3-P12. Penalties up to P2,000 fine and/or 2 years imprisonment." }
+    ]
+  },
+  {
+    id: "act-3396",
+    title: "Act No. 3396 — Compulsory Radio Installation on Philippine-Registered Ships",
+    shortTitle: "Act 3396",
+    type: "law",
+    category: "Foundational Laws",
+    status: "amended",
+    effective_date: "1927-01-01",
+    tags: ["maritime", "radio-equipment", "foundational-law", "historical"],
+    cross_references: ["act-3846"],
+    sections: [
+      { heading: "Sections 1-2 - Mandatory Radio Equipment", body: "Covered Philippine-registered vessels (coastwise passenger carriers; cargo vessels 350+ gross tons) may not sail without radio apparatus capable of sending/receiving over 200 nautical miles, day and night." },
+      { heading: "Sections 3-4 - Additional Plant and Licensed Operators", body: "Secretary may require additional sending plant. Radio apparatus must be operated by a first-class commercial radiotelegraph operator licensed under the Radio Control Law.", refs: ["act-3846"] }
+    ]
+  },
+  {
+    id: "eo-109",
+    title: "EO 109 — Policy to Improve the Provision of Local Exchange Carrier Service",
+    shortTitle: "EO 109",
+    type: "law",
+    category: "Executive Orders",
+    status: "active",
+    effective_date: "1993-07-12",
+    tags: ["local-exchange", "universal-access", "cross-subsidy", "telecom-services"],
+    cross_references: ["eo-59"],
+    sections: [
+      { heading: "Sections 1-2 - Definitions and Objective", body: "Defines Basic Telecommunications Service, Cost/Value-based pricing, Local Exchange Carrier Service, Universal Access. Objective: improve local exchange service in unserved/underserved areas." },
+      { heading: "Sections 3-8 - Cross-Subsidy and Service Packaging", body: "Local exchange cross-subsidized by other services. International gateway operators must provide local exchange service within 3 years, per line-provisioning guidelines (300 lines/switch termination, etc.). Subsidiaries restricted per EO 59.", refs: ["eo-59"] },
+      { heading: "Sections 11-18 - Interconnection, Reporting, Penalties", body: "Networks must interconnect non-discriminatorily per EO 59. NTC to issue rules within 30 days. 5-year compliance period. Violations carry EO 59 penalties.", refs: ["eo-59"] }
+    ]
+  },
+  {
+    id: "eo-196",
+    title: "EO 196 — Vesting Jurisdiction Over PHILCOMSAT With NTC",
+    shortTitle: "EO 196",
+    type: "law",
+    category: "Executive Orders",
+    status: "active",
+    effective_date: "1987-06-17",
+    tags: ["satellite", "philcomsat", "ntc-mandate", "historical"],
+    cross_references: ["eo-546"],
+    sections: [
+      { heading: "Full Text Summary", body: "Places the Philippine Communications Satellite Corporation (PHILCOMSAT) — including all facilities, services, and rate-fixing — under the jurisdiction, control, and regulation of NTC. Signed by President Corazon C. Aquino, June 17, 1987." }
+    ]
+  },
+  {
+    id: "eo-205",
+    title: "EO 205, s.1987 — Regulating CATV Systems in the Philippines",
+    shortTitle: "EO 205",
+    type: "law",
+    category: "Executive Orders",
+    status: "amended",
+    effective_date: "1987-06-30",
+    tags: ["catv", "cable-television", "broadcast-services", "franchise", "historical"],
+    cross_references: ["eo-436"],
+    sections: [
+      { heading: "Sections 1-2 - Certificate of Authority", body: "CATV operation open to Filipino citizens/entities under a Certificate of Authority from NTC, non-exclusive, up to 15 years renewable." },
+      { heading: "Sections 3-4 - Eminent Domain and Emergency Powers", body: "Grantees may exercise eminent domain. President may close a grantee's system or authorize government use in national emergency." },
+      { heading: "Sections 5-8 - Taxation, Implementation, Repeal", body: "3% franchise tax on gross receipts. NTC authorized to issue implementing rules. PD 1512 repealed. Effective immediately, June 30, 1987.", refs: ["eo-436"] }
+    ]
+  },
+  {
+    id: "eo-255",
+    title: "EO 255 — Mandatory Original Pilipino Music Quota for Radio",
+    shortTitle: "EO 255",
+    type: "law",
+    category: "Executive Orders",
+    status: "active",
+    effective_date: "1987-07-25",
+    tags: ["broadcast-services", "opm-quota", "radio", "historical"],
+    cross_references: [],
+    sections: [
+      { heading: "Full Text Summary", body: "Requires radio stations to broadcast a minimum of four original Pilipino musical compositions per clockhour of musical-format programming. Violations: P100 fine per violation; NTC may suspend/cancel Certificate of Registration for repeated violations. Signed July 25, 1987." }
+    ]
+  },
+  {
+    id: "eo-436",
+    title: "EO 436 — Policy Guidelines for Cable Television Operations",
+    shortTitle: "EO 436",
+    type: "law",
+    category: "Executive Orders",
+    status: "active",
+    effective_date: "1997-09-09",
+    tags: ["catv", "cable-television", "broadcast-services"],
+    cross_references: ["eo-205"],
+    sections: [
+      { heading: "Sections 1-2 - Separate Undertaking and NTC Regulation", body: "CATV maintained as distinct from telecommunications/broadcast TV. Regulation vested solely with NTC.", refs: ["eo-205"] },
+      { heading: "Section 3 - Authorization and Advertising", body: "Only Provisional Authority/Certificate of Authority holders may operate CATV. Cannot infringe broadcast markets via unauthorized ad insertion." },
+      { heading: "Section 4 - Cross-Ownership Restriction", body: "Local exchange operators, broadcasters, satellite/MDS operators barred from operating CATV without specific permits." },
+      { heading: "Sections 5-10 - Competing Authority, Leasing, Implementation", body: "NTC may grant competing authority in limited circumstances. Operators may lease excess capacity with approval. NTC implements and penalizes violations." }
+    ]
+  },
+  {
+    id: "eo-454",
+    title: "EO 454 — Transferring NTC Back Under DOTC",
+    shortTitle: "EO 454",
+    type: "law",
+    category: "Executive Orders",
+    status: "amended",
+    effective_date: "2005-08-16",
+    tags: ["ntc-mandate", "organization", "historical"],
+    cross_references: ["eo-546", "eo-648"],
+    sections: [
+      { heading: "Full Text Summary", body: "EO 546 created NTC under DOTC; EO 269 later placed NTC under CICT. This Order transfers NTC back under DOTC's supervision and control, streamlining bureaucracy. Separately places Philippine Charity Sweepstakes Office under DOH. Signed by President Gloria Macapagal-Arroyo, August 16, 2005.", refs: ["eo-546"] }
+    ]
+  },
+  {
+    id: "eo-467",
+    title: "EO 467 — National Policy on International Satellite Communications",
+    shortTitle: "EO 467",
+    type: "law",
+    category: "Executive Orders",
+    status: "active",
+    effective_date: "1998-03-17",
+    tags: ["satellite", "gmpcs", "dth", "telecom-services"],
+    cross_references: ["eo-59"],
+    sections: [
+      { heading: "Section 1 - Policy Guidance", body: "Enfranchised entities get direct access to international fixed/mobile satellite systems. Permissive approach to foreign SNG earth stations. GMPCS allowed, must interconnect per EO 59. DTH TV reception allowed subject to program authorization.", refs: ["eo-59"] },
+      { heading: "Sections 2-6 - Definitions, Implementation, Effectivity", body: "NTC to formulate implementing rules within 45 days. Defines Direct Access, DTH TV, Fixed/Mobile Satellite Service, GMPCS, SNG. Effective immediately." }
+    ]
+  },
+  {
+    id: "eo-468",
+    title: "EO 468 — Creating the National Council for Electronic Commerce",
+    shortTitle: "EO 468",
+    type: "law",
+    category: "Executive Orders",
+    status: "active",
+    effective_date: "1998-02-23",
+    tags: ["e-commerce", "policy-council", "historical"],
+    cross_references: [],
+    sections: [
+      { heading: "Full Text Summary", body: "Creates a National Electronic Commerce Promotion Council chaired by DTI, with a private-sector Co-Chairman, DOTC, DOST, NEDA, and four private-sector reps. Formulates the National Program and Strategy for e-commerce; DTI-based Secretariat; P5 million initial DTI funding. Signed February 23, 1998." }
+    ]
+  },
+  {
+    id: "eo-648",
+    title: "EO 648 — Attaching NTC to the Commission on ICT",
+    shortTitle: "EO 648",
+    type: "law",
+    category: "Executive Orders",
+    status: "amended",
+    effective_date: "2007-08-06",
+    tags: ["ntc-mandate", "organization", "historical"],
+    cross_references: ["eo-454", "eo-47"],
+    sections: [
+      { heading: "Full Text Summary", body: "Attaches NTC from DOTC to the Commission on Information and Communications Technology (CICT), invoking the President's continuing reorganization authority. Signed by President Gloria Macapagal-Arroyo, August 6, 2007. Later, EO 47 (2011) expressly retained NTC under the Office of the President as CICT was reorganized into DOST.", refs: ["eo-454", "eo-47"] }
+    ]
+  },
+  {
+    id: "eo-47",
+    title: "EO 47 — Reorganizing CICT and Transferring It to DOST",
+    shortTitle: "EO 47",
+    type: "law",
+    category: "Executive Orders",
+    status: "active",
+    effective_date: "2011-06-23",
+    tags: ["ntc-mandate", "organization", "ict-policy", "historical"],
+    cross_references: ["eo-648"],
+    sections: [
+      { heading: "Section 1 - Reorganizing and Transferring CICT to DOST", body: "CICT (created under EO 269, s.2004) renamed the Information and Communications Technology Office (ICTO), placed under DOST supervision. CICT Chairman/Commissioner positions abolished.", refs: ["eo-648"] },
+      { heading: "Sections 2-3 - Functions and Agency Transfers", body: "ICTO formulates national ICT policy, manages Government Information System Plan and E-Governance Fund. NCC and TELOF transferred to DOST as part of ICTO." },
+      { heading: "Section 4 - NTC Retained", body: "NTC and PHILPOST expressly continue under the Office of the President, unaffected by CICT's reorganization." },
+      { heading: "Sections 5-9 - Rationalization Plan, Effectivity", body: "DOST to submit a rationalization plan within 3 months covering structure, staffing, budget, and personnel safety nets. Effective upon publication." }
+    ]
+  },
+  {
+    id: "pd-1986",
+    title: "PD 1986 — Creating the Movie and Television Review and Classification Board",
+    shortTitle: "PD 1986",
+    type: "law",
+    category: "Foundational Laws",
+    status: "active",
+    effective_date: "1985-10-05",
+    tags: ["broadcast-content", "mtrcb", "media-regulation", "historical"],
+    cross_references: ["pd-1987"],
+    sections: [
+      { heading: "Full Text Summary", body: "Creates the Movie and Television Review and Classification Board (MTRCB) under the Office of the President. Composed of a Chairman, Vice-Chairman, and 30 members appointed by the President for 1-year renewable terms. Screens, reviews, and classifies motion pictures and TV programs. Signed by President Ferdinand E. Marcos, October 5, 1985.", refs: ["pd-1987"] }
+    ]
+  },
+  {
+    id: "pd-1987",
+    title: "PD 1987 — Creating the Videogram Regulatory Board",
+    shortTitle: "PD 1987",
+    type: "law",
+    category: "Foundational Laws",
+    status: "active",
+    effective_date: "1985-10-05",
+    tags: ["broadcast-content", "vrb", "media-regulation", "historical"],
+    cross_references: ["pd-1986"],
+    sections: [
+      { heading: "Full Text Summary", body: "Creates the Videogram Regulatory Board (VRB) under the Office of the President to regulate importation, production, distribution, and exhibition of videograms. Composed of a Chairman, Vice-Chairman, and 18 members. May approve, disapprove, or prohibit videograms judged immoral, indecent, or seditious. Signed by President Ferdinand E. Marcos, October 5, 1985.", refs: ["pd-1986"] }
+    ]
+  },
+  {
+    id: "do-7",
+    title: "DO 7, s.1950 — Rules and Regulations Governing Radio Training Schools",
+    shortTitle: "DO 7",
+    type: "regulation",
+    category: "Department Orders",
+    status: "amended",
+    effective_date: "1950-07-01",
+    tags: ["radio-training-center", "licensing", "historical"],
+    cross_references: ["act-3846", "do-5"],
+    sections: [
+      { heading: "Sections 1-2 - Certificate of Recognition Required", body: "No radio training school may open without a certificate of recognition from the Secretary of Commerce and Industry.", refs: ["act-3846"] },
+      { heading: "Section 3 - Requirements", body: "School owner/operator must be Filipino, 21+, of good standing. Classes limited to 50 students per qualified instructor.", refs: ["do-5"] }
+    ]
+  },
+  {
+    id: "do-11",
+    title: "DO 11 — General Rules Governing Radio Stations, Transmitters, and Transceivers",
+    shortTitle: "DO 11",
+    type: "regulation",
+    category: "Department Orders",
+    status: "amended",
+    effective_date: "1951-01-01",
+    tags: ["radio-stations", "licensing", "historical"],
+    cross_references: ["act-3846"],
+    sections: [
+      { heading: "Section I - Definitions", body: "Defines Permittee, Dealer, and Manufacturer for radio transmitter/transceiver possession, sale, and manufacture permits.", refs: ["act-3846"] },
+      { heading: "General Scope", body: "Establishes the general permitting framework for constructing, installing, or operating a radio station and possessing/manufacturing/selling transmitters or transceivers." }
+    ]
   }
 ];

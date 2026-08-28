@@ -1,0 +1,13 @@
+[Source: https://region7.ntc.gov.ph/wp-content/uploads/2024/01/RA_8439_Magna_Carta.pdf]
+[Fetched: 2026-08-27]
+[STATUS: UNRESOLVED — flagged, not converted]
+
+Republic Act No. 8439, "An Act Providing a Magna Carta for Scientists, Engineers, Researchers
+and Other Science and Technology Personnel in Government," was located in the Republic Acts
+table at region7.ntc.gov.ph/laws-rules-and-regulations/, but the linked PDF is a scanned/image-only
+file with no machine-readable text. No OCR has been performed. No content has been fabricated
+or summarized from an unverified source for this document.
+
+This document should be revisited once a machine-readable source (either an OCR pass on this
+same PDF, or an alternate clean-text source for RA 8439) is available. Until then, it does not
+count toward the repository's document total and should not be added to ui/data/documents.js.

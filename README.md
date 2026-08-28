@@ -20,28 +20,44 @@ Source site: https://region7.ntc.gov.ph/laws-rules-and-regulations/
 ├── scripts/
 │   └── validate.py               ← checks converted docs for missing IDs/metadata/broken links
 ├── examples/
-│   ├── html/                     ← 32 converted documents (the actual legal corpus)
+│   ├── html/                     ← 51 converted documents (the actual legal corpus)
 │   └── source/                   ← notes on skipped/OCR-flagged source PDFs
+├── incoming-raw/                 ← manually-downloaded source PDFs awaiting conversion
 └── ui/
     ├── index.html                ← the dashboard app (Tabler-based, no build step)
     └── data/
         └── documents.js          ← document data the dashboard reads
 ```
 
-## Current status: 32 of 50 target documents
+## Current status: 51 documents converted (target raised — see below)
 
-**Converted so far:** 3 core laws (RA 7925, EO 546, Act 3846) + 29 Memorandum Circulars spanning
-16 categories (General, Amateur, Broadcast, Telecom, Maritime, Fixed/Land Mobile, CPE, Value
-Added, Radio Training Center, Civic Group, Low Power Equipment, Cellular Mobile, Wireless Data
-Network, Radio Operator's Certificate, Radio Communication Dealers).
+**Converted so far:** 11 foundational laws (RA 7925, EO 546, Act 3846, EO 59, EO 109, EO 196,
+EO 205, EO 255, EO 436, EO 454, EO 467, EO 468, EO 47, EO 648, PD 576-A, PD 1986, PD 1987,
+Commonwealth Act 146, Act 3396), 3 Department Orders (DO 5, DO 7, DO 11), and 29 Memorandum
+Circulars spanning 16 categories (General, Amateur, Broadcast, Telecom, Maritime, Fixed/Land
+Mobile, CPE, Value Added, Radio Training Center, Civic Group, Low Power Equipment, Cellular
+Mobile, Wireless Data Network, Radio Operator's Certificate, Radio Communication Dealers).
 
-All 32 pass `scripts/validate.py` with 0 errors.
+All 51 pass `scripts/validate.py` with 0 errors.
 
-**Known gap:** one source PDF (MC 03-03-2005A) is a scanned image with no extractable text and is
-flagged in `examples/source/mc-03-03-2005a-needs-ocr.txt` rather than converted with guessed content.
+**Target raised:** the user manually downloaded the full NTC Region VII laws/regulations archive
+(~300 PDFs) into `incoming-raw/`. After dedup and matching against already-converted documents,
+roughly 275 distinct documents remain to be converted — far beyond the original 50-document
+target. This batch converted 15 of the highest-priority ones (foundational RAs/EOs/PDs/DOs); the
+rest are being converted in successive batches. See `incoming-raw/` for what's still pending.
+
+**Known gaps (scanned/non-machine-readable sources, not converted):** MC 03-03-2005A
+(`examples/source/mc-03-03-2005a-needs-ocr.txt`), RA 8439
+(`examples/source/ra-8439-needs-ocr.txt`). Some `incoming-raw/` PDFs required OCR (garbled or
+empty text layers) — those have been re-extracted via OCR and are queued for the next conversion
+batch rather than being skipped outright.
+
+**Out of scope, found in incoming-raw:** `EO_298.pdf` turned out to be about government
+travel-allowance rates, unrelated to NTC/telecommunications — it will not be converted into this
+repository.
 
 **Verbatim full text:** the dashboard's "Full Original Text" toggle currently has real verbatim
-text backfilled for 3 of 32 documents (MC 04-89, MC 06-04-99, MC 10-07-2007). The rest show a
+text backfilled for 3 of 51 documents (MC 04-89, MC 06-04-99, MC 10-07-2007). The rest show a
 clear notice and fall back to the summary view rather than presenting a paraphrase as the original.
 
 ## Using the dashboard (ui/)
