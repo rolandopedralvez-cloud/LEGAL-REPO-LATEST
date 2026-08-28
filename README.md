@@ -29,24 +29,58 @@ Source site: https://region7.ntc.gov.ph/laws-rules-and-regulations/
         └── documents.js          ← document data the dashboard reads
 ```
 
-## Current status: 55 documents converted (target raised — see below)
+## Current status: 213 documents converted (target raised — see below)
 
-**Converted so far:** 15 foundational laws (RA 7925, RA 10844, RA 9775, RA 8370, RA 9485, EO 546,
-Act 3846, EO 59, EO 109, EO 196, EO 205, EO 255, EO 436, EO 454, EO 467, EO 468, EO 47, EO 648,
-PD 576-A, PD 1986, PD 1987, Commonwealth Act 146, Act 3396), 3 Department Orders (DO 5, DO 7,
-DO 11), and 29 Memorandum Circulars spanning 16 categories (General, Amateur, Broadcast, Telecom,
-Maritime, Fixed/Land Mobile, CPE, Value Added, Radio Training Center, Civic Group, Low Power
-Equipment, Cellular Mobile, Wireless Data Network, Radio Operator's Certificate, Radio
-Communication Dealers).
+**Converted so far:** 23 foundational laws (Republic Acts, foundational Commonwealth Act/Presidential
+Decrees, and Executive Orders), 3 Department Orders, 11 Memorandum Orders, and 174 Memorandum
+Circulars/Joint Circulars spanning categories including General, Amateur, Broadcast, Telecom, Maritime
+(SOLAS/GMDSS/STCW/GMDSS/NAVTEX/EPIRB), Fixed/Land Mobile, CPE, Value Added Services/VoIP, Radio
+Training Center, Civic Group, Low Power Equipment, Cellular Mobile, Wireless Data Network, Radio
+Operator's Certificate, Radio Communication Dealers, Cable Television, Market Competition/New
+Major Player, Satellite Communications (domestic and international, plus TVRO and ESVs), Repeater
+Networks, Short-Range Radio/Devices, RFID, Restricted Land Mobile, Personal Radio Service,
+Government Personal Radio Service, Trunked Radio (PTRS), Content Classification (MTRCB/VRB), and
+Spectrum/Fee Administration. Round 8 added 20 more documents, including four 1972 martial-law-era
+circulars issued by the Radio Control Office (NTC's predecessor agency) — one directly invoking
+Proclamation No. 1081 — a paired set on the 430-440 MHz amateur/commercial spectrum dispute, a
+paired set of sequential VHF-equipment deadline extensions for fishing vessels, and a pair of
+program-standards content-restriction circulars (1985 and its 2001 reiteration amid a reported
+destabilization concern). Round 9 added 20 more documents, including Executive Order No. 205
+(1987 CATV regulation) and a range of broadcast, maritime, and CATV circulars from the 1980s-2000s.
+Round 10 added 16 more documents, including foundational laws Commonwealth Act 146 (the 1936
+Public Service Act), Presidential Decrees 1986 and 1987 (creating the MTRCB and VRB content
+classification boards), Presidential Decree 576-A, and Act No. 3396, plus spectrum-allocation and
+GMDSS/RTC-related circulars. Round 11 added 20 more documents, including a detailed revised CPE
+interface standards circular and a broad set of 1980s-2000s amendment circulars covering amateur
+radio, radio operator certification, maritime safety equipment, and spectrum administration.
+Round 12 added 5 more documents recovered via a higher-resolution re-OCR pass (250dpi + Tesseract)
+on source PDFs whose baked-in text layer was too garbled for direct `pdftotext` extraction: two
+spectrum-allocation circulars (BWA at 3300-3400 MHz, and the 5351.5-5366.5 kHz amateur radio band),
+an amendment updating short-range-device technical parameters, an Ultra-Wide Band (UWB) device
+definition and operating-conditions amendment, and a maritime radio-station-license deletion
+certificate guideline. Round 13 added 6 more documents, all recovered via the same 250dpi re-OCR
+technique: a joint NTC-DICT-DTI circular on one-year prepaid load expiration, a TV White Space
+spectrum-access circular, a reduced SMS/voice interconnection charge circular, additional CATV
+application evaluation guidelines, the detailed Implementing Rules and Regulations for Digital
+Terrestrial Television (DTTB) channel assignment in Mega Manila, and an updated ship radio
+equipment/operator-certification circular for domestic-route vessels. Round 14 added 7 more
+documents, the last round of this session's "keep going 5 times" run (batches 10-14), all
+recovered via the same re-OCR technique: an updated short-range-device frequency table, an
+extended compliance timeline for ISDB-T Emergency Warning Broadcast System receivers, electronic
+billing (e-billing) consumer guidelines, the PTE-identifier assignment scheme for Metro Manila's
+8-digit exchange-code migration, temporary permit guidelines for newly acquired ship stations,
+fixed broadband quality-of-service measurement rules, and ISP content-filtering guidelines under
+the Anti-Child Pornography Act (recovered from a fax-quality scan, with residual uncertain details
+marked rather than guessed).
 
-All 55 pass `scripts/validate.py` with 0 errors.
+All 213 pass `scripts/validate.py` with 0 errors.
 
 **Target raised:** the user manually downloaded the full NTC Region VII laws/regulations archive
 (~300 PDFs) into `incoming-raw/`. After dedup and matching against already-converted documents,
-roughly 275 distinct documents remain to be converted — far beyond the original 50-document
-target. This batch (round 3) added 4 more (the RAs that needed OCR: RA 10844, RA 9775, RA 8370,
-RA 9485) and backfilled verbatim full text for 23 previously-summary-only documents. The rest are
-being converted in successive batches. See `incoming-raw/` for what's still pending.
+roughly 98 distinct documents remain to be converted — far beyond the original 50-document
+target. Rounds 12-14 added 18 documents recovered by re-OCR rather than direct extraction (see
+below); all still include verbatim full text. The rest are being converted in successive batches.
+See `incoming-raw/` for what's still pending.
 
 **Known gaps (scanned/non-machine-readable sources, not converted):** MC 03-03-2005A
 (`examples/source/mc-03-03-2005a-needs-ocr.txt`), RA 8439
@@ -59,13 +93,17 @@ travel-allowance rates, unrelated to NTC/telecommunications — it will not be c
 repository.
 
 **Verbatim full text:** the dashboard's "Full Original Text" toggle now has real verbatim text for
-26 of 55 documents — the original 3 (MC 04-89, MC 06-04-99, MC 10-07-2007) plus 23 more backfilled
-this round (all Republic Acts, Executive Orders, Presidential Decrees, Department Orders, and
-Commonwealth Act 146 converted so far). Text was extracted directly from each source PDF via
-`pdftotext`, with OCR (`tesseract`) as fallback where the PDF's text layer was garbled or missing —
-never paraphrased or reconstructed from the summary. The remaining Memorandum Circulars still show
-a clear notice and fall back to the summary view rather than presenting a paraphrase as the
-original; full-text backfill for those continues in future batches.
+184 of 213 documents — the original 3, 23 backfilled in round 3, 10 in round 4, 15 in round 5, 20
+in round 6, 19 in round 7, 20 in round 8, 20 in round 9, 16 in round 10, 20 in round 11, 5 in round
+12, 6 in round 13, and all 7 newly converted in round 14. Text was extracted directly from each
+source PDF via `pdftotext`, with OCR (`tesseract`, at 250dpi where the default extraction was too
+garbled) as
+fallback where the
+PDF's text layer was garbled or missing — never paraphrased or reconstructed from the summary. A
+few signatory names in the round-12 documents remain partially illegible even after re-OCR and are
+marked as such in the verbatim text rather than guessed at. The remaining Memorandum Circulars
+still show a clear notice and fall back to the summary view rather than presenting a paraphrase as
+the original; full-text backfill for those continues in future batches.
 
 ## Using the dashboard (ui/)
 
