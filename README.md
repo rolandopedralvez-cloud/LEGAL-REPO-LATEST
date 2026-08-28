@@ -29,22 +29,24 @@ Source site: https://region7.ntc.gov.ph/laws-rules-and-regulations/
         └── documents.js          ← document data the dashboard reads
 ```
 
-## Current status: 51 documents converted (target raised — see below)
+## Current status: 55 documents converted (target raised — see below)
 
-**Converted so far:** 11 foundational laws (RA 7925, EO 546, Act 3846, EO 59, EO 109, EO 196,
-EO 205, EO 255, EO 436, EO 454, EO 467, EO 468, EO 47, EO 648, PD 576-A, PD 1986, PD 1987,
-Commonwealth Act 146, Act 3396), 3 Department Orders (DO 5, DO 7, DO 11), and 29 Memorandum
-Circulars spanning 16 categories (General, Amateur, Broadcast, Telecom, Maritime, Fixed/Land
-Mobile, CPE, Value Added, Radio Training Center, Civic Group, Low Power Equipment, Cellular
-Mobile, Wireless Data Network, Radio Operator's Certificate, Radio Communication Dealers).
+**Converted so far:** 15 foundational laws (RA 7925, RA 10844, RA 9775, RA 8370, RA 9485, EO 546,
+Act 3846, EO 59, EO 109, EO 196, EO 205, EO 255, EO 436, EO 454, EO 467, EO 468, EO 47, EO 648,
+PD 576-A, PD 1986, PD 1987, Commonwealth Act 146, Act 3396), 3 Department Orders (DO 5, DO 7,
+DO 11), and 29 Memorandum Circulars spanning 16 categories (General, Amateur, Broadcast, Telecom,
+Maritime, Fixed/Land Mobile, CPE, Value Added, Radio Training Center, Civic Group, Low Power
+Equipment, Cellular Mobile, Wireless Data Network, Radio Operator's Certificate, Radio
+Communication Dealers).
 
-All 51 pass `scripts/validate.py` with 0 errors.
+All 55 pass `scripts/validate.py` with 0 errors.
 
 **Target raised:** the user manually downloaded the full NTC Region VII laws/regulations archive
 (~300 PDFs) into `incoming-raw/`. After dedup and matching against already-converted documents,
 roughly 275 distinct documents remain to be converted — far beyond the original 50-document
-target. This batch converted 15 of the highest-priority ones (foundational RAs/EOs/PDs/DOs); the
-rest are being converted in successive batches. See `incoming-raw/` for what's still pending.
+target. This batch (round 3) added 4 more (the RAs that needed OCR: RA 10844, RA 9775, RA 8370,
+RA 9485) and backfilled verbatim full text for 23 previously-summary-only documents. The rest are
+being converted in successive batches. See `incoming-raw/` for what's still pending.
 
 **Known gaps (scanned/non-machine-readable sources, not converted):** MC 03-03-2005A
 (`examples/source/mc-03-03-2005a-needs-ocr.txt`), RA 8439
@@ -56,9 +58,14 @@ batch rather than being skipped outright.
 travel-allowance rates, unrelated to NTC/telecommunications — it will not be converted into this
 repository.
 
-**Verbatim full text:** the dashboard's "Full Original Text" toggle currently has real verbatim
-text backfilled for 3 of 51 documents (MC 04-89, MC 06-04-99, MC 10-07-2007). The rest show a
-clear notice and fall back to the summary view rather than presenting a paraphrase as the original.
+**Verbatim full text:** the dashboard's "Full Original Text" toggle now has real verbatim text for
+26 of 55 documents — the original 3 (MC 04-89, MC 06-04-99, MC 10-07-2007) plus 23 more backfilled
+this round (all Republic Acts, Executive Orders, Presidential Decrees, Department Orders, and
+Commonwealth Act 146 converted so far). Text was extracted directly from each source PDF via
+`pdftotext`, with OCR (`tesseract`) as fallback where the PDF's text layer was garbled or missing —
+never paraphrased or reconstructed from the summary. The remaining Memorandum Circulars still show
+a clear notice and fall back to the summary view rather than presenting a paraphrase as the
+original; full-text backfill for those continues in future batches.
 
 ## Using the dashboard (ui/)
 
